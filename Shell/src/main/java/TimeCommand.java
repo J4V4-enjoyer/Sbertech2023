@@ -1,12 +1,9 @@
-import java.util.Calendar;
-import java.util.GregorianCalendar;
+import java.time.LocalTime;
 
 public class TimeCommand implements Command {
     public void exec() {
-        GregorianCalendar gcalendar = new GregorianCalendar();
-        System.out.print(gcalendar.get(Calendar.HOUR) + ":");
-        System.out.print(gcalendar.get(Calendar.MINUTE) + ":");
-        System.out.println(gcalendar.get(Calendar.SECOND));
+        LocalTime now = LocalTime.now();
+        System.out.println(now);
     }
 
     public String getName() {
