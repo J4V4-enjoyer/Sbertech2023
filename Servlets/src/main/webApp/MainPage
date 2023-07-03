@@ -1,0 +1,37 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>System time</title>
+</head>
+
+<style>
+    .button {
+      text-decoration: none;
+      display: inline-block;
+      color: black;
+      padding: 20px 20px;
+      border: 3px solid black;
+      font-family: 'Open Sans';
+      font-size: 40px;
+      transition: .3s ease-in-out;
+      border-radius: 45px;
+    }
+    .button:before {
+    }
+    .button:hover {
+      background: #4169E1;
+      color: #fff;
+    }
+</style>
+
+<body>
+    <div style="margin-left: auto; margin-right: auto; text-align: center; margin-top: 300px; width: 600px;">
+        <form action="/time" method="post">
+            <button class="button">Узнать системное время</button>
+        </form>
+    </div>
+</body>
+
+</html>
